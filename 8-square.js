@@ -1,9 +1,13 @@
 const size = parseInt(process.argv[2]);
 
-if(isNaN(size)) {
+
+//Start loop and end here if condition doesn`t meet
+for (; isNaN(size); ) {
     console.log("Missing size");
-} else {
-    for(let i = 0; i < size; i++){
-        console.log("X".repeat(size));
-    }
+    process.exit();
+}
+
+//Condition for squares
+for (r = 0; r < size; r++) {
+    console.log("X".repeat(size));
 }
